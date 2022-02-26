@@ -3,11 +3,11 @@ function installsoftware {
   #This script is specifically for downloading ZIP files, extracting them and running an enclosed MSI installer
   #Set the variables here to be used in the rest of the script
   $url = 'INSERT URL HERE'
-  $output = "C:\build\EPSetup.zip"
-  $zip_extract_folder = "C:\build\EPSetup"
-  $path = "c:\build"
-  $log_date = Get-Date -Format "MM-dd-yyyy-HHmmss"
-  $msi_location = "c:\build\EPSetup\EPStandard\Easyplan.msi"
+  $output = "C:\pathto\example.zip"
+  $zip_extract_folder = "C:\pathto\extractlocation" #the folder you want the zip extracted to
+  $path = "c:\pathto"
+  $log_date = Get-Date -Format "MM-dd-yyyy-HHmmss" #used to timestamp the log file this scrip generates
+  $msi_location = "c:\pathto\extractlocation\subfolder\installationprogram.msi" #this is the MSI file you want to run
   
   #Start a timer
   $start_time = Get-Date
